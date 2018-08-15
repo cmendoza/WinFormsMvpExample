@@ -80,6 +80,9 @@
     <Compile Include="Infrestructure\IView.cs" />
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Navigation\BaseNavigator.cs" />
+    <Compile Include="Navigation\NavigationService.cs" />
+    <Compile Include="Navigation\WinFormsNavigator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
