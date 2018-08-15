@@ -69,15 +69,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs">
+    <Compile Include="Features\IMainView.cs" />
+    <Compile Include="Features\Login\ILoginView.cs" />
+    <Compile Include="Features\Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="Features\Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Login\LoginPresenter.cs" />
+    <Compile Include="Features\MainPresenter.cs" />
     <Compile Include="Infrestructure\BasePresenter.cs" />
     <Compile Include="Infrestructure\WinFormView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Infrestructure\IView.cs" />
+    <Compile Include="Features\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Navigation\BaseNavigator.cs" />
@@ -85,6 +95,12 @@
     <Compile Include="Navigation\WinFormsNavigator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Features\Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
