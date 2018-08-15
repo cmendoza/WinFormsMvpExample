@@ -73,6 +73,11 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
+    <Compile Include="Infrestructure\BasePresenter.cs" />
+    <Compile Include="Infrestructure\WinFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Infrestructure\IView.cs" />
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
