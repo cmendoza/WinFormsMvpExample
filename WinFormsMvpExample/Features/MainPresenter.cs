@@ -10,12 +10,18 @@ namespace WinFormsMvpExample
         public MainPresenter(IMainView view) 
             : base(view)
         {
-            view.OnLoaded += View_OnLoaded;
+            view.ViewShown += View_ViewShown;
         }
 
-        private void View_OnLoaded(object sender, EventArgs e)
+        private void View_ViewShown(object sender, EventArgs e)
         {
             NavigationService.Navigator.ShowModal<LoginPresenter, ILoginView>();
+            var signedin = NavigationService.Navigator.DataContext is bool ? (bool)NavigationService.Navigator.DataContext : false;
+            if (!signedin)
+            {
+                View.CloseApplication();
+                return;
+            }
         }
     }
 }

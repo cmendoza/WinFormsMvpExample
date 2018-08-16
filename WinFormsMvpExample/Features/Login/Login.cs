@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Windows.Forms;
 using WinFormsMvpExample.Infrestructure;
 
 namespace WinFormsMvpExample.Features.Login
@@ -22,6 +21,12 @@ namespace WinFormsMvpExample.Features.Login
             set => passwordTextBox.Text = value;
         }
 
+        public string ErrorMessage
+        {
+            get => errorMessageLabel.Text;
+            set => errorMessageLabel.Text = value;
+        }
+
         public event EventHandler SignInPressed
         {
             add => signinButton.Click += value;
@@ -33,7 +38,5 @@ namespace WinFormsMvpExample.Features.Login
             add => exitButton.Click += value;
             remove => exitButton.Click -= value;
         }
-
-        public void CloseApplication() => Application.Exit();
     }
 }

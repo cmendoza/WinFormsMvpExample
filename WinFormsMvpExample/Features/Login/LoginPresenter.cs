@@ -14,12 +14,22 @@ namespace WinFormsMvpExample.Features.Login
 
         private void View_SignInPressed(object sender, EventArgs e)
         {
+            // TODO: validate against data store
+            if (string.IsNullOrWhiteSpace(View.UserName) || string.IsNullOrWhiteSpace(View.Password))
+            {
+                View.ErrorMessage = "User name or password are required.";
+                return;
+            }
+
+            if (View.UserName != "user" || View.Password != "password")
+            {
+                View.ErrorMessage = "User name and/or password are not valid.";
+                return;
+            }
+
             View.Close();
         }
 
-        private void View_ExitPressed(object sender, EventArgs e)
-        {
-            View.CloseApplication();
-        }
+        private void View_ExitPressed(object sender, EventArgs e) => View.Close();
     }
 }

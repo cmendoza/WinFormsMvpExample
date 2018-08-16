@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.signinButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.errorMessageLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -74,7 +75,7 @@
             // signinButton
             // 
             this.signinButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.signinButton.Location = new System.Drawing.Point(116, 108);
+            this.signinButton.Location = new System.Drawing.Point(116, 117);
             this.signinButton.Name = "signinButton";
             this.signinButton.Size = new System.Drawing.Size(75, 23);
             this.signinButton.TabIndex = 4;
@@ -85,18 +86,28 @@
             // 
             this.exitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.exitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.exitButton.Location = new System.Drawing.Point(197, 108);
+            this.exitButton.Location = new System.Drawing.Point(197, 117);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 5;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
             // 
+            // errorMessageLabel
+            // 
+            this.errorMessageLabel.ForeColor = System.Drawing.Color.Red;
+            this.errorMessageLabel.Location = new System.Drawing.Point(12, 89);
+            this.errorMessageLabel.Name = "errorMessageLabel";
+            this.errorMessageLabel.Size = new System.Drawing.Size(260, 20);
+            this.errorMessageLabel.TabIndex = 6;
+            this.errorMessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Login
             // 
             this.AcceptButton = this.signinButton;
             this.CancelButton = this.exitButton;
-            this.ClientSize = new System.Drawing.Size(284, 143);
+            this.ClientSize = new System.Drawing.Size(284, 152);
+            this.Controls.Add(this.errorMessageLabel);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.signinButton);
             this.Controls.Add(this.passwordTextBox);
@@ -122,5 +133,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button signinButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Label errorMessageLabel;
     }
 }

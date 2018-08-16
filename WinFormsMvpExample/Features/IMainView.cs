@@ -5,6 +5,8 @@ namespace WinFormsMvpExample
 {
     public interface IMainView : IView
     {
-        event EventHandler OnLoaded;
+        event EventHandler ViewShown;
+
+        void CloseApplication();
     }
 }

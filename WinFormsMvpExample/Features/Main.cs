@@ -11,10 +11,12 @@ namespace WinFormsMvpExample
             InitializeComponent();
         }
 
-        public event EventHandler OnLoaded
+        public event EventHandler ViewShown
         {
-            add => Load += value;
-            remove => Load -= value;
+            add => Shown += value;
+            remove => Shown -= value;
         }
+
+        public void CloseApplication() => Application.Exit();
     }
 }

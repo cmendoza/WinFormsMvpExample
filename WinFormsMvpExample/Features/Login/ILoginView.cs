@@ -7,10 +7,9 @@ namespace WinFormsMvpExample.Features.Login
     {
         string UserName { get; set; }
         string Password { get; set; }
+        string ErrorMessage { get; set; }
 
         event EventHandler SignInPressed;
         event EventHandler ExitPressed;
-
-        void CloseApplication();
     }
 }
