@@ -16,7 +16,7 @@ namespace WinFormsMvpExample
         private void View_ViewShown(object sender, EventArgs e)
         {
             NavigationService.Navigator.ShowModal<LoginPresenter, ILoginView>();
-            var signedin = NavigationService.Navigator.DataContext is bool ? (bool)NavigationService.Navigator.DataContext : false;
+            var signedin = NavigationService.Navigator.DataContext is bool && (bool)NavigationService.Navigator.DataContext;
             if (!signedin)
             {
                 View.CloseApplication();

@@ -1,5 +1,6 @@
 ﻿using System;
 using WinFormsMvpExample.Infrastructure;
+using WinFormsMvpExample.Navigation;
 
 namespace WinFormsMvpExample.Features.Login
 {
@@ -27,6 +28,7 @@ namespace WinFormsMvpExample.Features.Login
                 return;
             }
 
+            NavigationService.Navigator.DataContext = true;
             View.Close();
         }
 
