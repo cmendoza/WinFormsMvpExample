@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
+
 using WinFormsMvpExample.Infrastructure;
 
-namespace WinFormsMvpExample
+namespace WinFormsMvpExample.Features.Main
 {
     public partial class Main : WinFormView, IMainView
     {

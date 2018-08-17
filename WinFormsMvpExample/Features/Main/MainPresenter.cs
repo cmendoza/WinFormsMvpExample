@@ -1,9 +1,10 @@
 ﻿using System;
+
 using WinFormsMvpExample.Features.Login;
 using WinFormsMvpExample.Infrastructure;
 using WinFormsMvpExample.Navigation;
 
-namespace WinFormsMvpExample
+namespace WinFormsMvpExample.Features.Main
 {
     public sealed class MainPresenter : BasePresenter<IMainView>
     {

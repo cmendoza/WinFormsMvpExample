@@ -1,4 +1,4 @@
-﻿namespace WinFormsMvpExample
+﻿namespace WinFormsMvpExample.Features.Main
 {
     partial class Main
     {

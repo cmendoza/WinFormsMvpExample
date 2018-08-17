@@ -1,7 +1,8 @@
 ﻿using System;
+
 using WinFormsMvpExample.Infrastructure;
 
-namespace WinFormsMvpExample
+namespace WinFormsMvpExample.Features.Main
 {
     public interface IMainView : IView
     {

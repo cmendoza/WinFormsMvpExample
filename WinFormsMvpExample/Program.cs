@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Unity;
 using WinFormsMvpExample.Features.Login;
+using WinFormsMvpExample.Features.Main;
 
 namespace WinFormsMvpExample
 {

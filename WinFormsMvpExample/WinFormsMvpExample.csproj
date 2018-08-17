@@ -69,7 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\IMainView.cs" />
+    <Compile Include="Features\Main\IMainView.cs" />
     <Compile Include="Features\Login\ILoginView.cs" />
     <Compile Include="Features\Login\Login.cs">
       <SubType>Form</SubType>
@@ -78,16 +78,16 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Features\Login\LoginPresenter.cs" />
-    <Compile Include="Features\MainPresenter.cs" />
+    <Compile Include="Features\Main\MainPresenter.cs" />
     <Compile Include="Infrastructure\BasePresenter.cs" />
     <Compile Include="Infrastructure\WinFormView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Infrastructure\IView.cs" />
-    <Compile Include="Features\Main.cs">
+    <Compile Include="Features\Main\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Features\Main.Designer.cs">
+    <Compile Include="Features\Main\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Navigation\BaseNavigator.cs" />
@@ -98,7 +98,7 @@
     <EmbeddedResource Include="Features\Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Features\Main.resx">
+    <EmbeddedResource Include="Features\Main\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
