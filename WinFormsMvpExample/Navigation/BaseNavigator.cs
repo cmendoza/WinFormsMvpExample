@@ -1,4 +1,4 @@
-﻿using WinFormsMvpExample.Infrestructure;
+﻿using WinFormsMvpExample.Infrastructure;
 
 namespace WinFormsMvpExample.Navigation
 {

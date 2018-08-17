@@ -1,5 +1,5 @@
 ﻿using System;
-using WinFormsMvpExample.Infrestructure;
+using WinFormsMvpExample.Infrastructure;
 
 namespace WinFormsMvpExample
 {

@@ -1,6 +1,6 @@
 ﻿using System;
 using WinFormsMvpExample.Features.Login;
-using WinFormsMvpExample.Infrestructure;
+using WinFormsMvpExample.Infrastructure;
 using WinFormsMvpExample.Navigation;
 
 namespace WinFormsMvpExample

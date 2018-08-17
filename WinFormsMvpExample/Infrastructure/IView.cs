@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace WinFormsMvpExample.Infrestructure
+namespace WinFormsMvpExample.Infrastructure
 {
     public interface IView
     {

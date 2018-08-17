@@ -79,11 +79,11 @@
     </Compile>
     <Compile Include="Features\Login\LoginPresenter.cs" />
     <Compile Include="Features\MainPresenter.cs" />
-    <Compile Include="Infrestructure\BasePresenter.cs" />
-    <Compile Include="Infrestructure\WinFormView.cs">
+    <Compile Include="Infrastructure\BasePresenter.cs" />
+    <Compile Include="Infrastructure\WinFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Infrestructure\IView.cs" />
+    <Compile Include="Infrastructure\IView.cs" />
     <Compile Include="Features\Main.cs">
       <SubType>Form</SubType>
     </Compile>

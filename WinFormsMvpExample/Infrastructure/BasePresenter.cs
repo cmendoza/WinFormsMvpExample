@@ -1,5 +1,5 @@
 ﻿
-namespace WinFormsMvpExample.Infrestructure
+namespace WinFormsMvpExample.Infrastructure
 {
     public abstract class BasePresenter<TView>
         where TView : IView
